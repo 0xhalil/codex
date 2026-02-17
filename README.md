@@ -80,9 +80,9 @@ Codex now supports Speckit commands natively within the TUI. This allows you to 
 ### How to use
 
 1.  **Initialize Project:**
-    To enable Specify commands, initialize Speckit in your project directory targeting the Codex agent structure:
+    To enable Specify commands, initialize Specify in your project directory targeting the Codex agent structure:
     ```bash
-    npx speckit init --agent codex
+    specify init --agent codex
     ```
     This creates the necessary `.codex/prompts/` directory with standard templates.
 

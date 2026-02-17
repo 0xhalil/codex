@@ -97,6 +97,8 @@ Codex now supports Speckit commands natively within the TUI. This allows you to 
     *   Type `/specify.` in the input box to see a list of available Specify commands.
     *   You can also type the command name directly (e.g., `/plan`, `/constitution`) to find and execute them.
 
+![Specify Commands](image.png)
+
 > **Note:** Codex prioritizes configuration in `.codex/prompts/` over legacy `.gemini/commands/` directories.
 
 ## Docs

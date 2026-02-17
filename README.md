@@ -12,9 +12,25 @@ If you want Codex in your code editor (VS Code, Cursor, Windsurf), <a href="http
 
 ## Quickstart
 
-### Installing and running Codex CLI
+### Installing Codex with Speckit Support (Required)
 
-Install globally with your preferred package manager:
+To use the Specify/Speckit commands, you must build Codex from this repository:
+
+1.  **Install Rust:** If you haven't already, install Rust via [rustup.rs](https://rustup.rs/).
+2.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/0xhalil/codex.git
+    cd codex
+    ```
+3.  **Build and Install:**
+    ```bash
+    cargo install --path codex-cli
+    ```
+    This will compile Codex and install the `codex` binary to your `~/.cargo/bin` directory. Ensure this directory is in your shell's PATH.
+
+### Official Release (Legacy/Public)
+
+Install globally with your preferred package manager (Note: verify Speckit support is included):
 
 ```shell
 # Install using npm

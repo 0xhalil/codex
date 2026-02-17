@@ -28,6 +28,9 @@ To use the Specify/Speckit commands, you must build Codex from this repository:
     ```
     This will compile Codex and install the `codex` binary to your `~/.cargo/bin` directory. Ensure this directory is in your shell's PATH.
 
+4.  **Run:**
+    Simply type `codex` in your terminal to start the application.
+
 ### Official Release (Legacy/Public)
 
 Install globally with your preferred package manager (Note: verify Speckit support is included):

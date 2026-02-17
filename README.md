@@ -50,6 +50,21 @@ Run `codex` and select **Sign in with ChatGPT**. We recommend signing into your 
 
 You can also use Codex with an API key, but this requires [additional setup](https://developers.openai.com/codex/auth#sign-in-with-an-api-key).
 
+## Specify (Speckit) Integration
+
+Codex now supports Speckit commands natively within the TUI. This allows you to load project-specific context and prompts directly from your project's configuration.
+
+### How to use
+
+1.  **Ensure Configuration Exists:** Your project should have Speckit commands defined in `.codex/prompts/` (as Markdown files) or `.gemini/commands/` (as TOML files).
+    *   Example: `.codex/prompts/speckit.constitution.md`
+2.  **Run Codex:** Simply run `codex` in your project directory.
+3.  **Use Commands:**
+    *   Type `/specify.` in the input box to see a list of available Specify commands.
+    *   You can also type the command name directly (e.g., `/plan`, `/constitution`) to find and execute them.
+
+> **Note:** Codex prioritizes configuration in `.codex/prompts/` over legacy `.gemini/commands/` directories.
+
 ## Docs
 
 - [**Codex Documentation**](https://developers.openai.com/codex)

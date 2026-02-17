@@ -79,9 +79,20 @@ Codex now supports Speckit commands natively within the TUI. This allows you to 
 
 ### How to use
 
-1.  **Ensure Configuration Exists:** Your project should have Speckit commands defined in `.codex/prompts/` (as Markdown files) or `.gemini/commands/` (as TOML files).
-    *   Example: `.codex/prompts/speckit.constitution.md`
-2.  **Run Codex:** Simply run `codex` in your project directory.
+1.  **Initialize Project:**
+    To enable Specify commands, initialize Speckit in your project directory targeting the Codex agent structure:
+    ```bash
+    npx speckit init --agent codex
+    ```
+    This creates the necessary `.codex/prompts/` directory with standard templates.
+
+2.  **Run Codex:**
+    Run the binary directly to ensure you are using the version with Speckit support:
+    ```bash
+    ~/.cargo/bin/codex
+    ```
+    (Or simply `codex` if `~/.cargo/bin` is in your PATH.)
+
 3.  **Use Commands:**
     *   Type `/specify.` in the input box to see a list of available Specify commands.
     *   You can also type the command name directly (e.g., `/plan`, `/constitution`) to find and execute them.
